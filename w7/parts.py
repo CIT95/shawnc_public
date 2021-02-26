@@ -6,10 +6,12 @@ resistors = {'100k': 14,
              '390r': '44', 
              '3.3k': '7'}
 ##add a key to a dd
+
 #print(resistors.setdefault('100r', False))
 #output - False
 
 ##sort (ascending or descending) 
+
 bin1 = {'a1': '100k',
         'a2': '10r',
         'a3': '1k',
@@ -19,6 +21,7 @@ bin1 = {'a1': '100k',
 ##output - [('a1', '100k'), ('a2', '10'), ('a3', '1k'), ('a4', '10k')]
 
 ##check whether a given key already exists in a dd
+
 #print(resistors.get('100k',0))
 ##output 14
 #print(resistors.get('470r',0))
@@ -73,5 +76,6 @@ filter_by_quantity = [f for f in allBins if f['quantity'] < 7]
 ##output - [{'location': 'bin1', 'section': 'a2', 'quantity': 5}]
 
 ##and output summary data (total, average, min, max etc)
+
 #print(str(len(filter_by_quantity))+ 'bin(s) below quantity threshold' )       
 ##output - 1bin(s) below quantity threshold    
